@@ -15,9 +15,14 @@ nota react me inicializa el repositorio
 despues creo el repo en github  y tengo que copiar las dos lineas que me descargando
 en la segunda poner master en lugar de main
 
+<<<<<<< HEAD
 elimino archivos que no sirven
 
 deje en 2.55
+=======
+clone repositorio
+con--->>> git clone y la direccion copiada de github
+>>>>>>> 669acaa3c68a26d88f66021727db68af9949c69d
 
 
 
