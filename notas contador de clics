@@ -1,0 +1,22 @@
+nota pasos que hago
+
+1 cree la carpeta contador de click dentro de directorio 
+proyectos react
+-------------------------------------
+npx create-react-app contador-de-clics
+--------------------------------------
+al crearse el proyectose inicializa el repositorio
+
+puedo ver si esta inicializado con ls -a 
+
+nota react me inicializa el repositorio
+
+
+despues creo el repo en github  y tengo que copiar las dos lineas que me descargando
+en la segunda poner master en lugar de main
+
+
+
+
+
+
