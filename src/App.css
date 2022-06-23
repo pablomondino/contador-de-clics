@@ -1,3 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  background-color: #1b1b32;
+}
+
+.app{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+/* permite alinear elementos en forma centrada tanto vertical como horizontalmente*/
+}
+
+
 /*.App {
   text-align: center;
 }

@@ -2,9 +2,24 @@
 
 import './App.css';
 
+import logo from './imagenes/logo.png'
+
+
 function App() {
   return (
     <div className="App">
+      
+      <div className='imagen-logo-contenedor'>
+        <img  className='imagen-logo'
+        src={logo}
+        
+        alt=''
+        />
+      </div>
+      
+      
+      
+      
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
