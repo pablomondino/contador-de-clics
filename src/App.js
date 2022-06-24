@@ -1,11 +1,20 @@
 
 
 import './App.css';
+import Boton from './componentes/Boton';
 
 import logo from './imagenes/logo.png'
 
 
 function App() {
+ 
+  const manejarClic = ()=>{
+  console.log("hiciste un click")
+ }
+ const reiniciarContador = ()=>{
+  console.log("reiniciar")
+ }
+ 
   return (
     <div className="App">
       
@@ -15,6 +24,20 @@ function App() {
         
         alt=''
         />
+      </div>
+      <div className='contenedor-principal'>
+        <Boton
+        texto="Clic"
+        onClick={true}
+        manejarClic={manejarClic}
+        />
+        <Boton/>
+        <Boton
+        texto="Reiniciar"
+        onClick={false}
+        manejarClic={reiniciarContador}
+        />
+        <Boton/>
       </div>
       
       

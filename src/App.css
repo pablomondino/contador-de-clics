@@ -6,22 +6,33 @@
 
 html,body {
   background-color: #1b1b32;
-}
-
-.app{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: center;/*centre vertical//*/
+  justify-content: center;/*centra horizontal//*/
+  padding-top: 15px;
+  font-family: Lato, sans-serif;
 
-/* permite alinear elementos en forma centrada tanto vertical como horizontalmente*/
+
+
 }
 
 
-/*.App {
-  text-align: center;
+.imagen-logo-contenedor{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 20px;
+
 }
 
+.imagen-logo{
+  height: 50px;/*mantiene prorporciones si solo le asignamos una altura*/
+
+}
+
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
