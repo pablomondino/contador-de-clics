@@ -85,3 +85,7 @@ setnumClics(0);
 }
 
 export default App;
+ 
+ {/* trabajamos con estado
+ asignamos un event listener a un boton
+ con esto actualizamos el valor de un componente*/}
