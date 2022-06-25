@@ -1,18 +1,38 @@
 
 
 import './App.css';
+
 import Boton from './componentes/Boton';
+import Contador from './componentes/contador';
 
 import logo from './imagenes/logo.png'
 
+import { useState } from 'react';
+
 
 function App() {
- 
-  const manejarClic = ()=>{
-  console.log("hiciste un click")
+ /*hooks: funciones especiales que permiten usar caracteristicas poderosas react
+ con componentes funcionales
+ useState --->> permite agregar estado a un componente funcional
+
+ Dentro componente funcional declaro un arreglo
+ con 2 elementos, el primero es el valor que queremos usar
+ como el estado, ejemplo en nuestra aplicacion tienen estado 
+ que le llamamos numclics
+ otro elemento en el arreglo es una funcion que nos va a permitir
+ actualizarlo
+ (es normal usar palabra set para referirse asignar)
+ (seguida nombre estado)
+
+ */
+
+ const [numClics, setnumClics]=useState(0);
+   
+ const manejarClic = ()=>{
+ setnumClics(numClics+1);
  }
  const reiniciarContador = ()=>{
-  console.log("reiniciar")
+setnumClics(0);
  }
  
   return (
@@ -21,23 +41,26 @@ function App() {
       <div className='imagen-logo-contenedor'>
         <img  className='imagen-logo'
         src={logo}
-        
-        alt=''
+         alt=''
         />
-      </div>
+      </
+      div>
+
       <div className='contenedor-principal'>
+        <Contador numClics={numClics} />
+
         <Boton
         texto="Clic"
         onClick={true}
         manejarClic={manejarClic}
         />
-        <Boton/>
+        
         <Boton
         texto="Reiniciar"
         onClick={false}
         manejarClic={reiniciarContador}
         />
-        <Boton/>
+        
       </div>
       
       
